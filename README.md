@@ -26,6 +26,8 @@ I decided to create `6` images for each letter, and see how the trained classifi
 
 ![Classifier 2](https://raw.githubusercontent.com/crowoy/Letter-Recognition/master/res/classifier2.png?token=ACEgQlJOhbf7n4lDTORZ8pBYFx6rEMljks5XT0ctwA%3D%3D)
 
+You can tell that some of these test images do not look at all similar to the letters which we would recognise. This is to highlight a (sort of) flaw with this approach. You can see that I can easily engineer test samples which fall very comfortably within the area of a certain letter. This is because it is quite easy to generate the test image (or inverse fourier space) for a sample, if you know what the Fourier Space is going to look like for that image, and you know the masks being used (i.e. the features being extracted).
+
 ## Testing Other Letters
 After this, I decided to test to see how the classifier worked on letters which it wasn't meant to classify. For this, I took `2` images, one of an `A` and one of a `B`.
 For these results, please look at the report: https://github.com/crowoy/Fourier-Feature-Extraction/blob/master/Report/oc14771.pdf
